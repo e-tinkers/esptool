@@ -1,4 +1,4 @@
-#Why this fork
+## Why this fork
 If you have a Mac running older version of macOS High Sierra, and if you upgrade fom ESP32 Arudino Core 1.0.6 to 2.0.0 or above, ESP32 will refuse to compile your code because esptool which is an open source tool that ESP32 is used to upload the code to the ESP32 board is build with github CI Actions which is based on macOS10.15. The issue is documented [here](https://github.com/espressif/arduino-esp32/issues/5639) and is flagged as "Wontfix". So the only way to solve this is to compile the esptool yourself and replace the one installed on your computer. This need to be done each time the Arduino Core is updated because it could overrided the version you replaced.
 
 ## How to compile your own esptool
